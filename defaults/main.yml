@@ -1,0 +1,9 @@
+---
+opcache_version: 7.0.3
+opcache_memory_consumption: 128
+opcache_interned_strings_buffer: 8
+opcache_max_accelerated_files: 4000
+opcache_revalidate_freq: 60
+opcache_fast_shutdown: 1
+opcache_enable_cli: 1
+opcache_save_comments: 0
