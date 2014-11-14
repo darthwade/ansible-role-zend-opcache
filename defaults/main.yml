@@ -7,5 +7,3 @@ opcache_revalidate_freq: 60
 opcache_fast_shutdown: 1
 opcache_enable_cli: 1
 opcache_save_comments: 0
-
-php_mods_available_dir: /etc/php5/mods-available
