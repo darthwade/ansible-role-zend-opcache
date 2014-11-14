@@ -28,7 +28,7 @@ $ git clone https://github.com/darthwade/ansible-role-zend-opcache.git
 
 ## Requirements & Dependencies
 - Ansible 1.4 or higher
-- PHP
+- PHP 5.5 or higher
 - PHP PECL (darthwade.php-pecl)
 
 ## Variables
