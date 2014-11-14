@@ -9,6 +9,17 @@
 - name: Copy Zend OpCache config file
   template: src=opcache.ini.j2 dest={{php_mods_available_dir}}/opcache.ini
 
+- name: asdf
+  command: ls /etc/php5
+  register: 'opcache_zend_extension2'
+
+- name: fff
+  command: php -v
+  register: 'opcache_zend_extension3'
+- name: fff2
+  command: which php5enmod
+  register: 'opcache_zend_extension4'
+
 - name: Enable Zend OpCache module
   command: php5enmod opcache
 
