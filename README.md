@@ -1,6 +1,7 @@
 # Ansible Role: Zend OpCache
 [![Build Status](https://travis-ci.org/darthwade/ansible-role-zend-opcache.png)](https://travis-ci.org/darthwade/ansible-role-zend-opcache)
 [![Gittip](http://img.shields.io/gittip/darthwade.svg)](https://www.gittip.com/darthwade/)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=darthwade&url=https://github.com/darthwade/ansible-role-zend-opcache&title=Ansible Role: Zend OpCache&language=&tags=github&category=software) 
 
 Ansible role that installs & configures Zend OpCache.
 

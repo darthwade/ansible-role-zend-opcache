@@ -1,18 +1,13 @@
 ---
-- name: Ensure PECL is installed
-  apt: name={{item}} state=present
-  with_items: 
-  - php5
-  - php-pear
-  - build-essential
-  - php5-dev
-
 - name: Find the location of opcache.so
   command: find /usr/lib/php5 -name 'opcache.so'
   register: 'opcache_zend_extension'
 
+- name: Ensure that PHP mods-available directory exists
+  file: path={{php_mods_available_dir}} state=directory
+
 - name: Copy Zend OpCache config file
-  template: src=opcache.ini.j2 dest=/etc/php5/mods-available/opcache.ini
+  template: src=opcache.ini.j2 dest={{php_mods_available_dir}}/opcache.ini
 
 - name: Enable Zend OpCache module
   command: php5enmod opcache
