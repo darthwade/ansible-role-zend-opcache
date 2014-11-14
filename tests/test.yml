@@ -1,7 +1,4 @@
 ---
 - hosts: all
-  vars:
-    php_pecl_extensions:
-    - xdebug
   roles:
-    - darthwade.php-pecl
+    - darthwade.zend-opcache
